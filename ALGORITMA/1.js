@@ -3,18 +3,18 @@ Terdapat string "NEGIE1", silahkan reverse alphabet nya dengan angka tetap diakh
 */
 
 function stringReverse(word) {
-    let temp = ""
-    let result = ""
+    let num = ""
+    let str = ""
     for (let i = 0; i < word.length; i++) {
         if (isNaN(word.charAt(i))) {
-            result += word.charAt(i);
+            str += word.charAt(i);
         }
         if (!isNaN(word[i])) {
-            temp += word[i]
+            num += word[i]
         }
     }
-    const str = result.split("").reverse().join("");
-    return console.log(str + temp);
+    const result = str.split("").reverse().join("");
+    return console.log(result + num);
 }
 let word = "NEGIE1";
 stringReverse(word);
