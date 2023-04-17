@@ -25,22 +25,22 @@ function App() {
 
   return (
     <div>
-      <h1 style={{textAlign: 'center', fontSize: 40, marginBottom: 50, marginTop: 30}}>News Headlines</h1>
+      <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 50, marginTop: 30 }}>News Headlines</h1>
       <List
         grid={{ gutter: 16, column: 3 }}
         dataSource={news}
         renderItem={(item) => (
           <List.Item>
-            <Card title={item.title} bordered={true} style={{ width: '600px', height: '570px', textAlign: 'center'}}>
+            <Card title={item.title} bordered={true} style={{ width: '600px', height: '570px', textAlign: 'center' }}>
               <div>
-                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: 10}}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: 10 }}>
                   <Image
                     src={item.urlToImage}
-                    style={{ height: '300px',objectFit: 'cover'}}
+                    style={{ height: '300px', objectFit: 'cover' }}
                   />
                 </div>
 
-                <div style={{marginTop: 10, paddingBottom: 10, height: '80px'}}>
+                <div style={{ marginTop: 10, paddingBottom: 10, height: '80px' }}>
                   <Paragraph>{item.description}</Paragraph>
                 </div>
 
@@ -49,8 +49,8 @@ function App() {
                 </div>
 
                 <div>
-                  <div style={{fontSize: 0}}>
-                  <Text>Author by: {item.author ? item.author : "anonym"}</Text>
+                  <div style={{ fontSize: 0 }}>
+                    <Text>Author by: {item.author ? item.author : "anonym"}</Text>
                   </div>
                 </div>
               </div>
